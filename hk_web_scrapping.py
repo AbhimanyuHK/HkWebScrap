@@ -62,5 +62,6 @@ def scrap_web_from_html():
 
 
 if __name__ == "__main__":
+    load_web()
     output = scrap_web_from_html()
     open(f"data/{store_as}_final_output.json", "w").write(json.dumps(output, indent=4))
